@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import 'sass_base/base';
+@import 'sass_base/mixin';
+@import 'sass_base/animate';
+@import 'sass_base/icon_arrow';
+
+.bxslider3 .bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+.bxslider3 {
+    overflow: hidden;
+}
+.bxslider3 .bxslider {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+.bxslider3 ul li img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 5% auto;
+    opacity: 0.6;
+    transition-duration: 0.25s;
+    @include kadomaru(20px);
+}
+.bxslider3 ul li.active-slide img {
+    width: 100%;
+    height: auto;
+    padding: 0px 0;
+    opacity: 1;
+    margin: 0% auto;
+}
+.bxslider3 .bx-viewport {
+        overflow: visible !important;
+}
